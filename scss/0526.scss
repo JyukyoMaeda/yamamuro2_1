@@ -15,6 +15,214 @@
 .g_navi{
     background: white;
     padding-bottom: .3vh;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.123);
+    &.-shadow{
+        padding-bottom: .3vh;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.123);
+    }
+    &.-btm{
+        position: sticky;
+        top: 0;
+    }
+}
+.commontitle{
+    font-size: 1.6rem;
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+    @include mq(tb-pc1000){
+        font-size: 2rem;
+    }
+    @include mq(tb-pc1300){ 
+        font-size: 2.6rem;
+    }
 }
 
+.headerArea{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0px 0px 5px #7c323221;
+    padding: 2vh 0 .5vh;
+    z-index: 9999;
+    .header-list{
+        width: auto;
+        height: auto;
+        @include mq(sp){
+            .header-lists{
+                position: relative;
+                &.-left{
+                    width: 35%;
+                    margin: auto;
+                    padding-bottom: 50px;
+                }
+                &.-center{
+                    position: absolute;
+                    top: 41%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 100%;
+                    text-align: center;
+                }
+                &.-right{
+                    display: none;
+                }
+            }
+        }
+        @include mq(tb){
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 2vh;
+            .header-lists{
+                position: relative;
+                &.-left{
+                    width: 10%;
+                    padding-left: 2vw;
+                }
+                &.-center{
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 33%;
+                    text-align: center;
+                }
+                &.-right{
+                    width: 26%;
+                    padding-right: 2vw;
+                    @include mq(tb){
+
+                    }
+                }
+            }
+        }
+        @include mq(tb-pc1000){
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 2vh;
+            .header-lists{
+                position: relative;
+                &.-left{
+                    width: 10%;
+                    padding-left: 2vw;
+                }
+                &.-center{
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 30%;
+                    text-align: center;
+                }
+                &.-right{
+                    width: 26%;
+                    padding-right: 2vw;
+                    @include mq(tb){
+
+                    }
+                }
+            }
+        }
+        @include mq(tb-pc1600){
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 2vh;
+            .header-lists{
+                position: relative;
+                &.-left{
+                    width: 10%;
+                    padding-left: 2vw;
+                }
+                &.-center{
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 30%;
+                    text-align: center;
+                }
+                &.-right{
+                    width: 26%;
+                    padding-right: 2vw;
+                    @include mq(tb){
+
+                    }
+                }
+            }
+        }
+    }
+    .header-rightArea{
+        display: flex;
+        justify-content: space-around;
+        @include mq(tb){
+            padding-top: .8vh;
+        }
+        @include mq(tb-pc1000){
+            padding-top: 1.5vh;
+        }
+        li{
+            width: calc(33.3% - 5px);
+        }
+    }
+    .header-navi{
+        width: auto;
+        ul{
+            display: flex;
+            width: 100%;
+            right: auto;
+            @include mq(sp){
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            @include mq(tb){
+                justify-content: space-between;
+            }
+            li{
+                position: relative;
+                text-align: center;
+                color: #fff;
+                font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+                transition: 0.5s;
+                width: calc(33.3% - 1px);
+                text-align: center;
+                padding: 10px 0px;
+                font-size: 1.2rem;
+                @include mq(tb){
+                    width: calc(16.6% - 1px);
+                    padding: 20px 0px;
+                    font-size: 1.6rem;
+                    &:hover{
+                        opacity: .6;
+                    }
+                }
+                &:nth-child(1){
+                    background: #6e7331;
+                }
+                &:nth-child(2){
+                    background: #b09d27;
+                }
+                &:nth-child(3){
+                    background: #bda881;
+                }
+                &:nth-child(4){
+                    background: #f1913d;
+                }
+                &:nth-child(5){
+                    background: #f1913d;
+                }
+                &:nth-child(6){
+                    background: #e55c4a;
+                }
+                span{
+                    display: block;
+                    font-family: "Times New Roman", Times, "serif";
+                    font-size: 120%;
+                }
+            }
+        }
+    }
+}
