@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+z-index: 99; z-index: 99; z-index: 99;z-index: 99;@charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
 {
@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: 20%;
+    left: -40px;
 		z-index: 100;
 }
 [dir='rtl'] .slick-prev
@@ -98,7 +98,7 @@
 
 .slick-next
 {
-    right: 20%;
+    right: -40px;
 		z-index: 99;
 }
 [dir='rtl'] .slick-next
