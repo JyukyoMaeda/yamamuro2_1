@@ -865,12 +865,13 @@ width: 50%;
 
 @media screen and (max-width: 768px) { 
 .equip .btn_wrap{
-width: 70%;
-margin: 20px auto 0px;
+/* width: 70%; */
+/* margin: 20px auto 0px; */
+margin: 10px auto 0px;
 }
 
 .equip .btn_wrap li{
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 }
 
