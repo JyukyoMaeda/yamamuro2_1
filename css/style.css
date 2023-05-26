@@ -200,24 +200,33 @@
   }
 }
 .headerArea .header-navi ul li {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
-  transition: 0.5s;
   width: calc(33.3% - 1px);
-  text-align: center;
   padding: 10px 0px;
-  font-size: 1.2rem;
 }
 @media screen and (min-width: 541px) {
   .headerArea .header-navi ul li {
     width: calc(16.6% - 1px);
     padding: 20px 0px;
-    font-size: 1.6rem;
   }
   .headerArea .header-navi ul li:hover {
     opacity: 0.6;
+  }
+}
+.headerArea .header-navi ul li a {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+  transition: 0.5s;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 541px) {
+  .headerArea .header-navi ul li a {
+    font-size: 1.6rem;
   }
 }
 .headerArea .header-navi ul li:nth-child(1) {

@@ -182,21 +182,28 @@
                 justify-content: space-between;
             }
             li{
-                position: relative;
-                text-align: center;
-                color: #fff;
-                font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
-                transition: 0.5s;
                 width: calc(33.3% - 1px);
-                text-align: center;
                 padding: 10px 0px;
-                font-size: 1.2rem;
                 @include mq(tb){
                     width: calc(16.6% - 1px);
                     padding: 20px 0px;
-                    font-size: 1.6rem;
                     &:hover{
                         opacity: .6;
+                    }
+                }
+                a{
+                    position: relative;
+                    text-align: center;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+                    transition: 0.5s;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    @include mq(tb){
+                        font-size: 1.6rem;
                     }
                 }
                 &:nth-child(1){
