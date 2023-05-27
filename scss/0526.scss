@@ -1,15 +1,28 @@
 .navi{
     top: 0;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 30px 0px 50px;
+        li{
+            width: 48%;
+            a{
+                padding: 10px 0px 0px;
+            }
+        }
+      }
 }
+
 .top_list {
     @include mq(sp){
         padding: 20px 20px 0 !important;
     }
 }
 .el_humburger {
-    padding-top: 15px;
+    padding-top: 20px !important;
     @include mq(tb){
-        padding-top: 19px;
+        padding-top: 19px !important;
     }
 }
 .g_navi{
@@ -34,15 +47,42 @@
         font-size: 2.6rem;
     }
 }
+.menu_box{
+    @include mq(sp){
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100px;
+        // height: 250px;
+        z-index: 1;
+        // background: rgba(255,255,255,0.5);
+    }
+    .el_humburger{
+        @include mq(tb){
+            display: none;
+        }
+    }
+}
+
+.g_navi{
+    @include mq(tb){
+        position: -webkit-sticky;
+        position: sticky;
+        top: -.5px;
+        z-index: 999;
+    }
+}
 
 .headerArea{
-    position: sticky;
-    top: 0;
-    left: 0;
     background: white;
     box-shadow: 0px 0px 5px #7c323221;
     padding: 2vh 0 .5vh;
     z-index: 9999;
+    @include mq(tb){
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
     .header-list{
         width: auto;
         height: auto;
@@ -61,6 +101,9 @@
                     transform: translate(-50%,-50%);
                     width: 100%;
                     text-align: center;
+                    @include mq(sp){
+                        top: 11.5%;
+                    }
                 }
                 &.-right{
                     display: none;
@@ -183,13 +226,9 @@
             }
             li{
                 width: calc(33.3% - 1px);
-                padding: 10px 0px;
                 @include mq(tb){
                     width: calc(16.6% - 1px);
-                    padding: 20px 0px;
-                    &:hover{
-                        opacity: .6;
-                    }
+                    transition: 1s all;
                 }
                 a{
                     position: relative;
@@ -202,8 +241,10 @@
                     display: block;
                     height: 100%;
                     width: 100%;
+                    padding: 10px 0px;
                     @include mq(tb){
                         font-size: 1.6rem;
+                        padding: 20px 0px;
                     }
                 }
                 &:nth-child(1){
@@ -219,7 +260,7 @@
                     background: #f1913d;
                 }
                 &:nth-child(5){
-                    background: #f1913d;
+                    background: #F3642A;
                 }
                 &:nth-child(6){
                     background: #e55c4a;
@@ -236,4 +277,16 @@
 
 .tab_class{
     color: white;
+}
+.tab_item{
+    @include mq(sp){
+        margin: 2.5em 0 -3em;
+    }
+}
+
+.no-active{
+    opacity: .5;
+    &:hover{
+        opacity: 1 !important;
+    }
 }

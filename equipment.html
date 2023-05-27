@@ -81,17 +81,43 @@ $(function() {
 		</ul>
 		<nav class="header-navi">
 			<ul>
-				<li><a href="index.html"><span>TOP</span>トップ</a></li>
-				<li><a href="cityscape.html"><span>cityscape</span>街並み</a></li>
-				<li><a href="plan.html"><span>plan</span>間取り</a></li>
-				<li><a href="equipment.html"><span>equipment</span>設備・仕様</a></li>
-				<li><a href="location.html"><span>location</span>ロケーション</a></li>
-				<li><a class="iframe" href="https://www.jyu-g.co.jp/contents/detail/712649557"><span>over view</span>物件概要</a></li>
+				<li class="no-active"><a href="index.html"><span>TOP</span>トップ</a></li>
+				<li class="no-active"><a href="cityscape.html"><span>cityscape</span>街並み</a></li>
+				<li class="no-active"><a href="plan.html"><span>plan</span>間取り</a></li>
+				<li class=""><a href="equipment.html"><span>equipment</span>設備・仕様</a></li>
+				<li class="no-active"><a href="location.html"><span>location</span>ロケーション</a></li>
+				<li class="no-active"><a class="iframe" href="https://www.jyu-g.co.jp/contents/detail/712649557"><span>over view</span>物件概要</a></li>
 			</ul>
 		</nav>
 	</div>
+	<!-- 工事中 -->
+	<div class="menu_box">
+		<div class="el_humburger">
+				<div class="el_humburger_wrapper">
+					<span class="el_humburger_bar top"></span>
+					<span class="el_humburger_bar middle"></span>
+					<span class="el_humburger_bar bottom"></span>
+				</div>
+		</div>
+		<div class="navi">
+			<div class="navi_inner">
+				<div class="navi_item"><a href="index.html">トップ</a></div>
+				<div class="navi_item"><a href="cityscape.html">街並み</a></div>
+				<div class="navi_item"><a href="plan.html">間取り</a></div>
+				<div class="navi_item"><a href="equipment.html">設備・仕様</a></div>
+				<div class="navi_item"><a href="location.html">ロケーション</a></div>
+				<div class="navi_item"><a href="https://www.jyu-g.co.jp/contents/detail/712649557">物件概要</a></div>
+			</div>
+			<ul class="btnArea">
+					<li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712649557">見学予約</a></li>
+					<li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712649557">お問い合わせ</a></li>
+					<li><a href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">無料会員登録</a></li>
+					<li><a href="https://www.jyu-g.co.jp/">ホーム</a></li>
+			</ul>
+		</div>
+	</div>
 
-		<div class="equip">
+	<div class="equip">
 		<div><img class="none-s" src="images/equip_top.jpg" alt=""/><img class="none-p" src="images/equip_top_s.jpg" alt=""/></div>
 		
 		<div><img class="none-s" src="images/equip_sec.jpg" alt=""/><img class="none-p" src="images/equip_sec_s.jpg" alt=""/></div>
@@ -112,8 +138,8 @@ $(function() {
 		<li><a href="https://www.jyu-g.co.jp/special/relation_link/maintenance/"><img class="none-s" src="images/equip_07.jpg" alt=""/><img class="none-p" src="images/equip_07_s.jpg" alt=""/></a></li>
 		<li><a href="https://www.jyu-g.co.jp/special/relation_link/construction/"><img class="none-s" src="images/equip_08.jpg" alt=""/><img class="none-p" src="images/equip_08_s.jpg" alt=""/></a></li>
 		</ul>
-		</div>
-		<div class="gaiyo_link"><a class="iframe" href="https://www.jyu-g.co.jp/contents/detail/712649557" >物件概要はこちら ＞</a></div>
+	</div>
+	<div class="gaiyo_link"><a class="iframe" href="https://www.jyu-g.co.jp/contents/detail/712649557" >物件概要はこちら ＞</a></div>
 		<script>
 				$(function() {
   $(".iframe").colorbox({

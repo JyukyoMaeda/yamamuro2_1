@@ -107,10 +107,10 @@ width: 100%;
 　　ヘッドメニュー
 ----------------------------------------------*/
 .navi ul{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin: 30px 30px 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 30px 50px;
 }
 
 .navi ul li{
@@ -209,7 +209,7 @@ font-family: sans-serif ;
 　　共通パーツ
 ----------------------------------------------*/
 
-.menu_box{
+/* .menu_box{
 position: fixed;
 top: 0;
 right: 0;
@@ -217,7 +217,7 @@ width: 100px;
 height: 250px;
 z-index: 1;
 background: rgba(255,255,255,0.5);
-}
+} */
 
 a img{
 transition: .3s;
@@ -573,12 +573,12 @@ text-align: center;
 .top_navi ul li:nth-child(5){background: #f3642a;}
 .top_navi ul li:nth-child(6){background: #e55c4a;}
 
-.g_navi{
+/* .g_navi{
 position: -webkit-sticky;
 position: sticky;
 top: 0;
 z-index: 999;
-}
+} */
 
 header.top .top_logo{
 width: 160px;
@@ -992,7 +992,8 @@ justify-content: flex-start
 .tab_class {
 width: calc(100%/4 - 5px);
 background-color: #eeeeee;
-line-height: 50px;
+line-height: 35px;
+margin: 2px;
 font-size: 2.0rem;
 font-family: "Times New Roman", Times, "serif";
 text-align: center;
