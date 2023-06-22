@@ -11,7 +11,7 @@
                 padding: 10px 0px 0px;
             }
         }
-      }
+    }
 }
 
 .top_list {
@@ -92,17 +92,18 @@
                 &.-left{
                     width: 35%;
                     margin: auto;
-                    padding-bottom: 50px;
+                    padding-bottom: 10px;
                 }
                 &.-center{
-                    position: absolute;
-                    top: 41%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
+                    // position: absolute;
+                    // top: 41%;
+                    // left: 50%;
+                    // transform: translate(-50%,-50%);
                     width: 100%;
                     text-align: center;
                     @include mq(sp){
-                        top: 11.5%;
+                        // top: 16%;
+                        padding-bottom: 10px;
                     }
                 }
                 &.-right{

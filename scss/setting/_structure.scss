@@ -20,7 +20,7 @@ $breakpoint: (
     tb-pc1400: 'screen and (min-width: 1400px)',
     tb-pc1600: 'screen and (min-width: 1600px)',
     tb-pc1850: 'screen and (min-width: 1850px)',
-    pc: 'screen and (min-width: 1900px)'
+    pc: 'screen and (min-width: 1900px)',
 
 );
 @mixin mq($bp) {

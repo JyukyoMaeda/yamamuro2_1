@@ -105,20 +105,16 @@
   .headerArea .header-list .header-lists.-left {
     width: 35%;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   .headerArea .header-list .header-lists.-center {
-    position: absolute;
-    top: 41%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
   }
 }
 @media screen and (max-width: 540px) and (max-width: 540px) {
   .headerArea .header-list .header-lists.-center {
-    top: 11.5%;
+    padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 540px) {
